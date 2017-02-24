@@ -1,0 +1,129 @@
+/*------------------------------------------
+	CUSTOM PROPERTIES
+------------------------------------------*/
+
+:root {
+	/* Colors*/
+	--main-bg-color: #222;
+}
+
+/* @media queries */
+@custom-media --bp-only-small (width < 37.5em); /* <600px */
+@custom-media --bp-only-medium (width >= 37.5em) and (width < 56.25em); /* 600-899px */
+@custom-media --bp-medium (min-width: 37.5em); /* 600px */
+@custom-media --bp-large (min-width: 56.25em); /* 900px */
+@custom-media --bp-xlarge (min-width: 75em); /* 1200px */
+
+
+
+
+/*------------------------------------------
+	RESET/BASE
+------------------------------------------*/
+
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	background-color: #000;
+	background-size: cover;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+}
+
+header,
+main,
+footer {
+	display: block;
+}
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+}
+
+
+/*	Background
+---------------------*/
+
+@supports (object-fit: cover) {
+	body {
+		background-color: var(--main-bg-color); /* this'll be replaced with image */
+		background-image: none;
+	}
+}
+
+
+
+
+/*------------------------------------------
+	HEADER
+------------------------------------------*/
+
+.site-header {
+}
+
+
+
+
+/*------------------------------------------
+	MAIN
+------------------------------------------*/
+
+.site-main {
+	padding: 1.25em;
+
+	@media (--bp-medium) {
+		padding: 2em;
+	}
+}
+
+
+
+
+/*------------------------------------------
+	FOOTER
+------------------------------------------*/
+
+.site-header {
+}
+
+
+
+
+/*------------------------------------------
+	LISTS
+------------------------------------------*/
+
+/*	List social
+---------------------*/
+
+.list-social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list-social__item {
+}
+
+.list-social__link {
+}
+
+
+
+
+/*------------------------------------------
+	UTILITY
+------------------------------------------*/
+
+.text-hidden {
+	display: block;
+	overflow: hidden;
+	text-indent: 200%;
+	white-space: nowrap;
+}
