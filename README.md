@@ -11,3 +11,5 @@ WIP
 - [ ] Redo `npm start` task/packages for better watch/build/reloading. Set up `env` for dev and prod
 - [ ] Improve filepath shenanigans in npm scripts. Globbing, multiple file setup
 - [ ] Integrate Webpack/module workflow
+- [ ] Helpful error handling/recovery
+- [ ] CSS/JS linting
